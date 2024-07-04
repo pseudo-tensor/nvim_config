@@ -2,12 +2,11 @@ vim.g.mapleader = " "
 
 local map = vim.keymap.set
 
+map("n", "<leader>pv", vim.cmd.Ex) 
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
 map("i", "<C-e>", "<End>", { desc = "move end of line" })
 map("v", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
 map("v", "<C-e>", "<End>", { desc = "move end of line" })
-
-map("x", "<leader>p", "\"_dP")
 
 map("i", "<C-h>", "<Left>", { desc = "move left" })
 map("i", "<C-l>", "<Right>", { desc = "move right" })
